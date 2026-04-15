@@ -1,0 +1,11 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+*{font-family:Inter,sans-serif}
+.dark body{background:linear-gradient(135deg,#111827,#0f172a);color:#e5e7eb}
+.glass{backdrop-filter:blur(10px);background:rgba(255,255,255,.8);border:1px solid rgba(255,255,255,.2)}
+.card-hover{transition:all .3s ease}.card-hover:hover{transform:translateY(-2px) scale(1.02)}
+.toast{animation:slideIn .3s ease}
+@keyframes slideIn{from{opacity:0;transform:translateX(20px)}to{opacity:1;transform:translateX(0)}}
+.skeleton{background:linear-gradient(90deg,#e5e7eb 25%,#f3f4f6 37%,#e5e7eb 63%);background-size:400% 100%;animation:skeleton 1.4s ease infinite}
+@keyframes skeleton{0%{background-position:100% 0}100%{background-position:0 0}}
+@media print {.no-print{display:none!important}}
